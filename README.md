@@ -49,6 +49,7 @@ optional arguments:
   -s, --save            saves tweets to tweets/{twitter_handle}/{yyyy-mm-
                         dd_HH-MM-SS}.json
   --no-color            disables colored output
+  --no-retweets         does not evaluate retweets
 ```
 
 ### Example output
@@ -58,3 +59,8 @@ optional arguments:
 License
 ----
 GNU GPLv3
+
+
+If this tool has been useful for you, feel free to thank me by buying me a coffee
+
+[![Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoff.ee/x0rz)
