@@ -33,14 +33,14 @@ import json
 import sys
 import os
 
+from lib.tweepy import twitter_api
+
 __version__ = '0.2-dev'
 
 try:
     from urllib.parse import urlparse
 except ImportError:
     from urlparse import urlparse
-
-from secrets import consumer_key, consumer_secret, access_token, access_token_secret
 
 # Here are sglobals used to store data - I know it's dirty, whatever
 start_date = 0
@@ -328,9 +328,7 @@ def main():
     global color_supported
     color_supported = supports_color()
 
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
-    twitter_api = tweepy.API(auth)
+
 
     now = datetime.datetime.now()
     save_path = save_folder+"/"+args.name
