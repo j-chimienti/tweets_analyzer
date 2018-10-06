@@ -12,7 +12,8 @@ There are plenty of things that could be added to the script, feel free to contr
 
 **Note:**
 
-I added a delete script
+1. I added a delete script
+1. keys are loaded from .env see .env.example
 
 ### Installation
 
